@@ -13,5 +13,6 @@ This is a personal notebook where I keep track of my learnings and insights on v
 ### Advance Kotlin: 
 
 * Lazy vs Lateinit 
-    lazy and lateinit are both used to delay the initialization of a variable in Kotlin, but they work in slightly different ways. So sometimes it becomes confusing which one should be used based on different use cases. 
+    * lazy and lateinit are both used to delay the initialization of a variable in Kotlin, but they work in slightly different ways. So sometimes it becomes confusing which one should be used based on different use cases. 
     [Medium Blog](https://medium.com/huawei-developers/kotlin-lateinit-vs-by-lazy-initialization-example-tutorial-c19d84216480)
+
