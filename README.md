@@ -1,11 +1,40 @@
-# Android Dev Notebook
+# Advance Android Development
 ### Description
 This is a personal notebook where I keep track of my learnings and insights on various Android topics. It is meant to serve as a reference for my own future projects and to help me improve my skills as an Android developer.
 
-
 ### Table of Contents
 
+- [Dependency Injection](#Dependency-Injection)
+    - [Why?](#Introduction)
 - [Native Android](#native-android)
+
+# Dependency-Injection
+
+### Introduction
+First, let's try to find out what is dependency and how it works in code?
+Suppose we've an object named Mobile like below:
+```
+class Mobile() {
+    private val simCard:SimCard();
+    init {
+        simCard = SimCard();
+        makeCall();
+    }
+    fun makeCall() {
+       simcard.makeCall();
+    }
+}
+```
+In this situation, we can see that the Mobile object is dependent on the SimCard object. Because the makeCall() method won't be executed if the simCard is not initialized properly. 
+So, Simcard is the Dependency of Mobile. In other words Mobile is dependent on SimCard.
+
+But what can be a problem in this situation? 
+According to the 5th rule of **Solid** principle:
+"High-level classes should not depend on low-level classes. Instead, both should depend upon abstractions."
+
+But in the following code, we are creating the SimCard object on the initialization of Mobile Object. That clearly violates the rule and the Mobile object is tightly coupled with the SimCard Object. 
+
+This is the problem which is solved by ***Dependency Injection***
 
 
 # Native-Android
