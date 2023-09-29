@@ -6,6 +6,7 @@ This is a personal notebook where I keep track of my learnings and insights on v
 
 - [Dependency Injection](#Dependency-Injection)
     - [Why?](#Introduction)
+    - [Dagger Vs Hilt](#Dagger-vs-Hilt)
 - [Native Android](#native-android)
 
 # Dependency-Injection
@@ -36,6 +37,14 @@ But in the following code, we are creating the SimCard object on the initializat
 
 This is the problem which is solved by ***Dependency Injection***
 
+### Dagger-vs-Hilt
+
+Dagger and Hilt these two are the most common libraries for dependency injection for android. Dagger is pretty old and hilt is pretty new to the business. 
+But Dagger should always be pritomized before learning Hilt for two important reasons.
+ * Hilt is made on top of Dagger. So the first reason to understand Dagger would to understand how hilt actually works. 
+ * Most of the existing projets in open source or some industry levels are built using dagger. 
+
+So,Here,first some fundamentals of Dependency injection will be explained using dagger.
 
 # Native-Android
 
